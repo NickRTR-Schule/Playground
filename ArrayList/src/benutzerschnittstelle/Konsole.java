@@ -80,7 +80,8 @@ public class Konsole
 		// b) Element mit dem Wert 2 entfernen
 		System.out.println("Aufgabe 2 b) Element mit dem Wert 2 entfernen");
 		loop(arrlist);
-		arrlist.remove(arrlist.indexOf(2));
+		// arrlist.remove(arrlist.indexOf(2)); korrektur:
+		arrlist.remove((Integer) 2);
 		loop(arrlist);
 	}
 	
