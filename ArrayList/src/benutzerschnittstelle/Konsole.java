@@ -8,6 +8,10 @@ public class Konsole
 
 	public static void main(String[] args)
 	{		
+		System.out.println("Aufgabe 1");
+		System.out.println("---------------------------------------------------------");
+		System.out.println();
+		
 		ArrayList<String> namen = new ArrayList<>();
 		ArrayList<Integer> alter = new ArrayList<>();
 		
@@ -50,6 +54,42 @@ public class Konsole
 		{
 			System.out.println(statischePersonen[i].liesName() + " ist " + statischePersonen[i].liesAlter() + " Jahre alt.");
 		}
+		
+		
+		System.out.println();
+		System.out.println("---------------------------------------------------------");
+		System.out.println("Aufgabe 2");
+		System.out.println("---------------------------------------------------------");
+		System.out.println();
+		
+		// ArrayList Aufgabe 2
+		System.out.println("Uebung 2 (Array: [2, 5, 1, 7, 6)");
+		ArrayList<Integer> arrlist = new ArrayList<>();
+		arrlist.add(2);
+		arrlist.add(5);
+		arrlist.add(1);
+		arrlist.add(7);
+		arrlist.add(6);
+		
+		// a) Element Nr. 2 entfernen
+		System.out.println("Aufgabe 2 a) Element Nr. 2 entfernen");
+		loop(arrlist);
+		arrlist.remove(1);
+		loop(arrlist);
+		
+		// b) Element mit dem Wert 2 entfernen
+		System.out.println("Aufgabe 2 b) Element mit dem Wert 2 entfernen");
+		loop(arrlist);
+		arrlist.remove(arrlist.indexOf(2));
+		loop(arrlist);
 	}
-
+	
+	static void loop(ArrayList<Integer> arrlist)
+	{
+		for(int i = 0; i < arrlist.size(); i++)
+		{
+			System.out.print(arrlist.get(i) + " ");
+		}
+		System.out.println();
+	}
 }
