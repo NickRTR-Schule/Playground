@@ -1,4 +1,4 @@
-package fachkonzept;
+package ArrayList.fachkonzept;
 
 public class Person
 {

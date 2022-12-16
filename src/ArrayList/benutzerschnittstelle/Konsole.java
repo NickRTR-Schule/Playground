@@ -1,7 +1,7 @@
-package benutzerschnittstelle;
+package ArrayList.benutzerschnittstelle;
 
 import java.util.ArrayList;
-import fachkonzept.Person;
+import ArrayList.fachkonzept.Person;
 
 public class Konsole
 {
