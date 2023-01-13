@@ -6,4 +6,5 @@
  *
  */
 module Playground {
+	requires java.desktop;
 }
